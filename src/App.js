@@ -1,17 +1,13 @@
-import { Footer } from "./Components/Footer/Footer";
-import { Header } from "./Components/Header/Header";
-import { Main } from "./Components/Main/Main";
-import "./style.css";
+import AuthForm from "./components/Containers/AuthForm";
+import DashboardLayout from "./components/DashboardLayout/DashboardLayout";
 
 export function App() {
   return <div style={{
     display: 'flex',
+    justifyContent: "space-between",
     flexDirection: 'column',
-    justifyContent: 'space-between',
     height: '100vh'
-  }}>
-    <Header />
-    <Main />
-    <Footer />
-  </div>
+  }}><DashboardLayout>
+    <AuthForm/>
+    </DashboardLayout></div>;
 }
